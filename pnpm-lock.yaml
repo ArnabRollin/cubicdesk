@@ -60,6 +60,9 @@ importers:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
+      chromatic:
+        specifier: ^11.11.0
+        version: 11.11.0
       drizzle-kit:
         specifier: ^0.22.0
         version: 0.22.8

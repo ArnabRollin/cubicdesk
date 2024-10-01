@@ -6,7 +6,7 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "npm run test:integration && npm run test:unit",
+    "test": "pnpm run test:integration && pnpm run test:unit",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check . && eslint .",
@@ -18,7 +18,8 @@
     "db:start": "docker compose up",
     "db:push": "drizzle-kit push",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "chromatic": "pnpm exec chromatic --project-token=chpt_01ea47036138254"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^2.0.2",
@@ -36,6 +37,7 @@
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@types/eslint": "^9.6.0",
     "autoprefixer": "^10.4.20",
+    "chromatic": "^11.11.0",
     "drizzle-kit": "^0.22.0",
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.1.0",
